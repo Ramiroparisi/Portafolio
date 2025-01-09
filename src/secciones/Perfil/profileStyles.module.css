@@ -68,7 +68,7 @@
 }
 
 .description{
-    max-width: 24ch;
+    max-width: 28ch;
     align-self: center;
 }
 
@@ -173,7 +173,7 @@
     }
     
     .description{
-        max-width: 24ch;
+        max-width: 30ch;
         align-self: center;
     }
     
