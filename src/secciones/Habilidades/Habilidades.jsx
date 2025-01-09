@@ -13,11 +13,13 @@ import Java from '../../assets/Java.png';
 import Express from '../../assets/express.svg';
 import MongoDB from '../../assets/MongoDB.png';
 import SQL from '../../assets/sql.svg';
+import { useLanguage } from '../../common/lenguajes.jsx';
 
 function Habilidades() {
+    const { language } = useLanguage();
     return (
         <section id="habilidades" className={styles.container}>
-            <h1 className='sectionTitle'> Habilidades </h1>
+            <h1 className='sectionTitle'> {language === "en" ? "Skills" : "Habilidades"} </h1>
             <div className={styles.listaHabilidades}>
                 <ListaHabilidades src={Reactjs} habilidad="React" alt="Icono de react" />
                 <ListaHabilidades src={HTML} habilidad="HTML"/>

@@ -14,8 +14,10 @@ import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
 
 import { useTheme} from '../../common/themeContext.jsx';
+import { useLanguage } from '../../common/lenguajes.jsx';
 
 function Perfil() {
+  const { language } = useLanguage();
   const {theme, toggleTheme} = useTheme();
 
   const themeIcon = theme === 'light' ? sun : moon;
@@ -57,9 +59,8 @@ function Perfil() {
         </a>
       </span>
       <p className={styles.description}> 
-        Me encanta aprender y probar diversas teconologías, también me gustan las buenas prácticas 
-        y los patrones de diseño.
-        </p>
+        {language === "en" ? "I love learning and trying out different technologies, I also like good practices and design patterns." : "Me encanta aprender y probar diversas teconologías, también me gustan las buenas prácticas y los patrones de diseño."}
+      </p>
       <a href={CV} download>
         <button className='hover'>
         CV
