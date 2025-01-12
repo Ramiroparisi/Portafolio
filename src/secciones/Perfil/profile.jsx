@@ -4,6 +4,8 @@ import perfilDark from '../../assets/perfil-Photoroom.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
 import CV from '../../assets/RamiroParisi_CV.pdf';
+import cvEspañol from '../../assets/RamiroParisiCV_Es.pdf';
+import cvIngles from '../../assets/RamiroParisiCV_En.pdf';
 import twitterLight from '../../assets/twitter-light.svg';
 import twitterDark from '../../assets/twitter-dark.svg';
 
@@ -24,6 +26,7 @@ function Perfil() {
   const perfil = theme === 'light' ? perfilLight : perfilDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
+  const cv = language === "en" ? cvIngles : cvEspañol;
 
 
   return <section id="perfil" className={styles.container}> 
@@ -61,7 +64,7 @@ function Perfil() {
       <p className={styles.description}> 
         {language === "en" ? "I love learning and trying out different technologies, I also like good practices and design patterns." : "Me encanta aprender y probar diversas teconologías, también me gustan las buenas prácticas y los patrones de diseño."}
       </p>
-      <a href={CV} download>
+      <a href={cv} download>
         <button className='hover'>
         CV
         </button>
