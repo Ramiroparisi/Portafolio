@@ -34,7 +34,7 @@ function Perfil() {
       <img 
         className={styles.perfil} 
         src={perfil} 
-        alt="Foto de perfil" 
+        alt="Ramiro Parisi" 
       />
 
       <img 
@@ -55,14 +55,14 @@ function Perfil() {
       </h2>
       <span>
         <a href="https://github.com/Ramiroparisi">
-          <img src={githubIcon} alt="Icono de Github"/>
+          <img src={githubIcon} alt="Github icon - Ramiro Parisi"/>
         </a>
         <a href="https://www.linkedin.com/in/ramiro-parisi-5a2bb8230/">
-          <img src={linkedinIcon} alt="Icono de Linkedin"/>
+          <img src={linkedinIcon} alt="Linkedin icon - Ramiro Parisi"/>
         </a>
       </span>
       <p className={styles.description}> 
-        {language === "en" ? "I love learning and trying out different technologies, I also like good practices and design patterns." : "Me encanta aprender y probar diversas teconologías, también me gustan las buenas prácticas y los patrones de diseño."}
+        {language === "en" ? "I love learning and trying out different technologies, I am also very interested in software architecture and design patterns." : "Me encanta aprender y probar diversas teconologías, tambien me interesa mucho la arquitectura de software y los patrones de diseño."}
       </p>
       <a href={cv} download>
         <button className='hover'>
